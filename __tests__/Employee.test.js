@@ -38,6 +38,6 @@ test("Class employee has getEmail method that returns the email", ()=>{
     expect(testEmployee.getEmail()).toBe(testValue)
 })
 test("Class employee has getRole method that returns the role", ()=>{
-    const testValue = "employee"
+    const testValue = "Employee"
     expect(testEmployee.getRole()).toBe(testValue)
 })
