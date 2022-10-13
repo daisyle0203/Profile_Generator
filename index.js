@@ -38,7 +38,7 @@ const addManager = () => {
         message: "What is the team manager's ID?",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter the manager's ID!")
+            console.log(` Please enter the manager's ID!`)
             return false
           } else {
             return true
@@ -54,7 +54,7 @@ const addManager = () => {
           if (valid) {
             return true
           } else {
-            console.log("Please enter an email!")
+            console.log(` Please enter an email!`)
             return false
           }
         },
@@ -65,7 +65,7 @@ const addManager = () => {
         message: "What is the team manager's office number?",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter an office number!")
+            console.log(` Please enter an office number!`)
             return false
           } else {
             return true
@@ -78,13 +78,10 @@ const addManager = () => {
       const manager = new Manager(name, id, email, officeNumber)
 
       employeesList.push(manager)
-      console.log(manager)
     })
 }
 
 const addEmployee = () => {
-  console.log(`Adding employees to the team 😊`)
-
   return inquirer
     .prompt([
       {
@@ -101,7 +98,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true
           } else {
-            console.log("Please enter an employee's name!")
+            console.log(` Please enter an employee's name!`)
             return false
           }
         },
@@ -109,10 +106,10 @@ const addEmployee = () => {
       {
         type: "input",
         name: "id",
-        message: "What is the employee's ID?.",
+        message: "What is the employee's ID?",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter the employee's ID!")
+            console.log(` Please enter the employee's ID!`)
             return false
           } else {
             return true
@@ -128,7 +125,7 @@ const addEmployee = () => {
           if (valid) {
             return true
           } else {
-            console.log("Please enter an email!")
+            console.log(` Please enter an email!`)
             return false
           }
         },
@@ -142,7 +139,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true
           } else {
-            console.log("Please enter the engineer's Github username!")
+            console.log(` Please enter the engineer's Github username!`)
           }
         },
       },
@@ -155,7 +152,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true
           } else {
-            console.log("Please enter the intern's school!")
+            console.log(` Please enter the intern's school!`)
           }
         },
       },
@@ -174,12 +171,8 @@ const addEmployee = () => {
 
       if (role === "Engineer") {
         employee = new Engineer(name, id, email, github)
-
-        console.log(employee)
       } else if (role === "Intern") {
         employee = new Intern(name, id, email, school)
-
-        console.log(employee)
       }
 
       employeesList.push(employee)
