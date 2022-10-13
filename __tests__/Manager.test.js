@@ -2,12 +2,12 @@ const Manager = require("../lib/Manager")
 const empName = "Alex"
 const id = 2
 const email = "alex@email.com"
-const officeNum = 123
-const testManager = new Manager(empName, id, email, officeNum)
+const officeNumber = 123
+const testManager = new Manager(empName, id, email, officeNumber)
 
 test("We can create a new instantiation of the Manager class", () => {
   const testValue = testManager
-  expect(typeof(testValue)).toBe("object")
+  expect(typeof testValue).toBe("object")
 })
 
 test("Class manager has name attribute", () => {
@@ -26,7 +26,7 @@ test("Class manager has email attribute", () => {
 })
 test("Class manager has office attribute", () => {
   const testValue = 123
-  expect(testManager.officeNum).toBe(testValue)
+  expect(testManager.officeNumber).toBe(testValue)
 })
 
 test("Class manager has getName method that returns the name", () => {
