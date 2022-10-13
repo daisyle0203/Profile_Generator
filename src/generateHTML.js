@@ -8,20 +8,19 @@ const generateManager = function (manager) {
           <div class="card-body bg-primary text-light shadow rounded-top">
             <h5 class="card-title fs-2">${manager.name}</h5>
             <p class="card-text fs-4">
-              <i class="fa-solid fa-coffee fa-beat"></i> Manager
+            <i class="fa fa-coffee"></i> Manager
             </p>
           </div>
           <ul
             class="list-group bg-light py-4 px-3 rounded-0 shadow rounded"
             style="height: 13rem"
           >
-            <li class="list-group-item rounded-top border-light">
-            ${manager.id}
+            <li class="list-group-item rounded-top border-light">ID: ${manager.id}
             </li>
             <li class="list-group-item border-light">
-              Email: <a href="daisy.le0203@gmail.com">${manager.email}</a>
+              Email: <a href="${manager.email}">${manager.email}</a>
             </li>
-            <li class="list-group-item border-light rounded-bottom">
+            <li class="list-group-item border-light rounded-bottom">Office number:
             ${manager.officeNumber}
             </li>
           </ul>
@@ -39,21 +38,19 @@ const generateEngineer = function (engineer) {
     <div class="card-body bg-primary text-light shadow rounded-top">
       <h5 class="card-title fs-2">${engineer.name}</h5>
       <p class="card-text fs-4">
-        <i class="fa-solid fa-coffee fa-beat"></i> Engineer
+      <i class="fa fa-puzzle-piece"></i> Engineer
       </p>
     </div>
     <ul
       class="list-group bg-light py-4 px-3 rounded-0 shadow rounded"
       style="height: 13rem"
     >
-      <li class="list-group-item rounded-top border-light">
-      ${engineer.id}
+      <li class="list-group-item rounded-top border-light">ID: ${engineer.id}
       </li>
       <li class="list-group-item border-light">
-        Email: <a href="daisy.le0203@gmail.com">${engineer.email}</a>
+        Email: <a href="${engineer.email}">${engineer.email}</a>
       </li>
-      <li class="list-group-item border-light rounded-bottom">
-      ${engineer.github}
+      <li class="list-group-item border-light rounded-bottom">GitHub: ${engineer.github}
       </li>
     </ul>
   </div>
@@ -70,21 +67,19 @@ const generateIntern = function (intern) {
     <div class="card-body bg-primary text-light shadow rounded-top">
       <h5 class="card-title fs-2">${intern.name}</h5>
       <p class="card-text fs-4">
-        <i class="fa-solid fa-coffee fa-beat"></i> Engineer
+      <i class="fa fa-graduation-cap"></i> Intern
       </p>
     </div>
     <ul
       class="list-group bg-light py-4 px-3 rounded-0 shadow rounded"
       style="height: 13rem"
     >
-      <li class="list-group-item rounded-top border-light">
-      ${intern.id}
+      <li class="list-group-item rounded-top border-light">ID: ${intern.id}
       </li>
       <li class="list-group-item border-light">
-        Email: <a href="daisy.le0203@gmail.com">${intern.email}</a>
+        Email: <a href="${intern.email}">${intern.email}</a>
       </li>
-      <li class="list-group-item border-light rounded-bottom">
-      ${intern.school}
+      <li class="list-group-item border-light rounded-bottom">School: ${intern.school}
       </li>
     </ul>
   </div>
