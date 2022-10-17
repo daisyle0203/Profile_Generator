@@ -42,7 +42,7 @@ node index
 
 ---
 
-[Click here to watch the demo](https://drive.google.com/file/d/12ADP_vk_LGpp0uRpX7k0El2hg9aKYWvE/view?usp=sharing)
+[Click here to watch the demo on Screencastify](https://drive.google.com/file/d/1kDvU3Jz8Vuf8cQmfvTEAI0x6l-QFZd_n/view)
 
 ![The following images show the web application's appearance and functionality:](./assets/team-screenshot.png)
 
@@ -69,7 +69,7 @@ npm run test
 ## Questions:
 
 If you have any questions, you may contact me at either <br>
-Github: https://github.com/daisy.le0203
+Github: https://github.com/daisyle0203
 <br>
 or
 <br>
